@@ -1,0 +1,232 @@
+/* Google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* Similar styles */
+
+:root{
+    --color:#fbff09;
+} 
+
+*{
+    margin: 0;
+}
+body{   
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    /* width: 1440px; */
+}
+i .fa-arrow-alt-circle-right{
+   
+    font-size: 16px;
+}
+
+.span-color{
+    color:var(--color); 
+    
+}
+
+/* Header's styles */
+
+.h-area{
+    height: 677px;
+    background-color: #2D25A0;
+}
+.header-items{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding-top: 100px;
+    
+}
+.header-button-title{
+    width: 50%;
+}
+.h-title h1{
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+}
+.h-button a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500 ;
+    background-color: #e02c6e;
+    padding: 10px 30px;
+}
+
+/* Transitions of images */
+
+.h-area:hover .header-image img{
+    transform: rotate(30deg);
+    transition:transform 0.7s ease-out ;
+}
+
+.h-area:hover{
+    background-color: #a50729;
+    transition: background-color 0.8s ease-in;   
+}
+.h-area:hover .header-button a{
+    background-color: #093572;
+    transition: background-color 0.7s ease-in;
+}
+.card:hover{
+    background-color: rgba(233, 233, 248, 0.575);
+    transform: translate(0, -16px);
+    transition: transform 0.4s ease;
+}
+
+ /* Main section and All players styles */
+
+.all-players{
+    /* width: 1440px; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.player-cards{
+    margin-top: 70px;
+    /* width: 1050px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 20px;
+}
+.card{
+    width: 300px;
+    height: 480px;
+    box-shadow: 5px 5px 30px rgba(155, 152, 152, 0.445);
+    padding: 15px;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card img{
+    border-radius: 5px;
+}
+.card-info{
+    color: #6c6c6cda;
+}
+
+/* Bonus Part */
+
+.followers{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+     /* height: 200px; */
+    background-color: #000000;
+}
+.achivements h1{
+    font-size: 54px;
+    color: white;
+}
+.achivements h4{
+    color: #b80a8d;
+}
+
+
+/* Videos style */
+
+
+.yt-videos{
+    padding: 60px;
+}
+
+ .iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .video-title{
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .yt{
+      color: red;
+  }
+
+
+  /* Footer's styles */
+
+
+.footer-area{
+    padding: 10px;
+    border-top: 1px solid rgba(128, 128, 128, 0.247);
+    height: 220px;
+    text-align: center;
+}
+.footer-logo img{
+    position: relative;
+    left: -35px;
+}
+.social-icons i{
+    height: 82px;
+    width: 82px;
+    font-size: 32px;
+    color: rgba(128, 128, 128, 0.555);
+}
+.copyright p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+ /* Media Query for mobile */
+
+
+@media only screen and (max-width:688px) {
+    
+    .h-area{
+        height: 810px;
+    }
+    .header-items{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    .h-button a{
+        margin-left: 0;
+    }
+    .player-cards{
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .h-title h1{
+        font-size: 34px;
+    }
+    .header-image img{
+        margin-top: 80px;
+        height: 320px;
+        width: 380px;
+    }
+    .footer-area{
+        padding: 10px;
+        border: 0px solid rgba(128, 128, 128, 0.247);
+    }
+    .followers{
+        display: flex;
+        flex-direction: column;
+    }
+         
+}
+
+/* Media End */
